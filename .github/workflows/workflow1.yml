@@ -1,1 +1,32 @@
+name: CI-Workflow1
 
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
+  pull_request_review:
+    types: [submitted, dismissed]
+  issues:
+    types: [opened, closed, labeled, unlabelled]
+  fork:
+    types: [created]
+  workflow_dispatch:  
+  schedule:
+    - cron: 0 0 * * *
+
+jobs: 
+  demo_job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo 'Welcome to Github Actions'
+
+  demo_job2:
+    runs-on: windows-latest
+    steps:
+      - name: Step 2
+        run: echo 'Welcome to Amazon Web Services'
