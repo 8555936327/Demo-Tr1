@@ -25,4 +25,4 @@ jobs:
     runs-on: macos-11
     steps:
       - name: Step3
-        run: echo 'Hello! This job is running for macOS-11 (Big Sur)'
+        run: echo 'Hello! This job is running for macOS-11'
