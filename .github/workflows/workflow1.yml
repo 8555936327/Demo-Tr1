@@ -16,7 +16,7 @@ on:
     types: [created]
   workflow_dispatch:  
   schedule:
-    - cron: 0 0 * * *
+    - cron: */30 * * * *
 
 jobs: 
   demo_job1:
