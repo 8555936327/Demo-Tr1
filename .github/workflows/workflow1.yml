@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Step 1
-        run: echo 'Welcome to Github Actions'
+        run: echo 'Welcome to Github Actions Training'
 
   demo_job2:
     runs-on: windows-latest
