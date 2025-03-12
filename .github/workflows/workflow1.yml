@@ -29,4 +29,4 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Step 2
-        run: echo 'Welcome to Amazon Web Services'
+        run: echo 'Welcome to Amazon Web Services Training'
